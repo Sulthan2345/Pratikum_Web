@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan</title>
+    <style>
+      
+        h1 {
+            text-align: center;
+            border: 2px solid white; 
+            padding: 10px;
+            background-color: blue; 
+        }
+        .recipe-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%; 
+            border-radius: 10px;
+        }
+       
+        .ingredients {
+            background-color: gray; 
+            color: black; 
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .steps {
+            background-color: gray; 
+            color: black; 
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+     
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: blue;
+        }
+
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resep Nasi Goreng Spesial</h1>
+    
+ 
+    <img src="https://example.com/nasi-goreng.jpg" alt="Nasi Goreng" class="recipe-image">
+
+   
+    <div class="ingredients">
+        <h2>Bahan-bahan:</h2>
+        <ul>
+            <li>2 piring nasi putih</li>
+            <li>2 siung bawang putih, cincang halus</li>
+            <li>1 butir telur</li>
+            <li>100 gram ayam, potong kecil</li>
+            <li>2 sendok makan kecap manis</li>
+            <li>Garam dan merica secukupnya</li>
+        </ul>
+    </div>
+
+    <div class="steps">
+        <h2>Cara Membuat:</h2>
+        <ol>
+            <li>Panaskan minyak di wajan, tumis bawang putih hingga harum.</li>
+            <li>Masukkan ayam, aduk hingga berubah warna.</li>
+            <li>Tambahkan telur, orak-arik hingga matang.</li>
+            <li>Masukkan nasi putih, kecap manis, garam, dan merica. Aduk rata.</li>
+            <li>Masak hingga nasi goreng matang dan bumbu meresap. Angkat dan sajikan.</li>
+        </ol>
+    </div>
+
+    <div style="text-align: center;">
+        <button class="button" onclick="cekResep()">Cek Resep</button>
+        <button class="button" onclick="window.print()">Cetak</button>
+    </div>
+    <footer>
+        @Copyright Sulthan Tegar Naraja 2024
+    </footer>
+
+    <script>
+        function cekResep() {
+            console.log("Resep Nasi Goreng Spesial");
+        }
+    </script>
+</body>
+</html>
