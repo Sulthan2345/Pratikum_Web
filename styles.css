@@ -1,103 +1,60 @@
-/* Atur body dan latar belakang */
 body {
-    background-color: #f0f4f8; /* Ganti dengan warna yang lebih maskulin */
+    background-color: #ffffff;
     margin: 20px;
-    font-family: Arial, sans-serif;
 }
-
-/* Pengaturan header, judul, dan paragraf */
 h1, p {
     text-align: center;
-    color: #005f73; /* Ganti dengan warna biru gelap */
+    color: #0e7392;
 }
-
-/* Atur logo agar berada di tengah */
-.logo {
-    display: block;
-    margin: 0 auto;
-    width: 150px; /* Sesuaikan ukuran logo */
-    height: auto;
-}
-
-/* Tabel menu */
 table {
     width: 70%;
     margin: auto;
     border-collapse: collapse;
-    background-color: #e0f7fa; /* Warna biru muda */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit bayangan */
+    background-color: #ffdcdc;
 }
-
-/* Gaya untuk header tabel (th) */
 th {
-    background-color: #00796b; /* Warna hijau kebiruan gelap */
+    background-color: #ff6bbd;
     color: white;
-    padding: 12px;
+    padding: 10px;
     font-family: 'Tahoma';
-    border: 1px solid #004d40;
+    border: 1px solid #ff0000;
 }
-
-/* Warna untuk th ganjil dan genap */
-th:nth-child(even) {
-    color: #004d40; /* Hijau tua */
-}
-th:nth-child(odd) {
-    color: #ffffff; /* Tetap putih */
-}
-
-/* Gaya untuk data tabel (td) */
 td {
-    border: 1px solid #004d40;
+    border: 1px solid #ff0000;
     padding: 10px;
     text-align: center;
     font-family: 'Gill Sans MT';
-    color: #005f73; /* Biru gelap */
+    color: blue;
 }
-
-/* Warna untuk td ganjil dan genap */
-td:nth-child(even) {
-    color: #004d40; /* Hijau tua */
-}
-td:nth-child(odd) {
-    color: #005f73; /* Biru gelap */
-}
-
-/* Hover effect pada baris tabel */
 tr:hover {
-    background-color: #b2dfdb; /* Hijau kebiruan muda */
+    background-color: #c9c9c9;
 }
-
-/* Pengaturan gambar dalam tabel */
-td img {
-    max-width: 150px;
-    height: auto;
-}
-
-/* Pengaturan untuk sub judul */
+th:nth-child(even) {color:#ff0000;} 
+th:nth-child(odd) {color:#0011ff;} 
+td:nth-child(even) {color:#2600ff;} 
+td:nth-child(odd) {color:#ff0000;} 
 h2, h3 {
     font-size: 20px; 
     font-weight: bold; 
     text-align: center;
-    color: #005f73;
+    color: #0e7392;
 }
-
-/* Gambar dalam paragraf */
 p img {
-    max-width: 200px;
-    height: auto;
+    max-width: 200px; 
+    height: auto; 
     text-align: center;
 }
-
-/* Pengaturan footer */
+td img {
+    max-width: 200px; 
+    height: auto; 
+}
 footer {
-    text-align: center;
-    background-color: #00796b; /* Hijau kebiruan gelap */
-    padding: 10px 15px;
-    width: 70%;
-    margin: 20px auto; /* Posisikan di tengah */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    text-align:center; 
+    background-color: #ec61da;
+    padding:10px 15px;
+    width: 65%;
+    margin: auto; 
 }
-
 footer p {
     color: white;
 }
