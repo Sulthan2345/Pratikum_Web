@@ -4,11 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Menu Restoran Sulthan</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <style>
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ff5733;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #c70039; /* Hover effect */
+        }
+
+        /* Table */
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid #333;
+            font-family: Arial, sans-serif;
+        }
+        thead {
+            background-color: #ffcc80;
+            font-family: Verdana, sans-serif;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f7f7f7;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Body Padding */
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <script>
+        function submitPesanan() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            const menuItems = [
+                {name: 'Nasi Goreng', price: 25000},
+                {name: 'Ayam Bakar', price: 30000},
+                {name: 'Mie Goreng', price: 20000},
+            ];
+
+            if (checkboxes.length > 0) {
+                console.log("Pesanan Anda:");
+                checkboxes.forEach((checkbox) => {
+                    const selectedItem = menuItems.find(item => item.name === checkbox.value);
+                    if (selectedItem) {
+                        console.log(`${selectedItem.name} - Rp. ${selectedItem.price}`);
+                    }
+                });
+            } else {
+                console.log("Tidak ada makanan yang dipilih.");
+            }
+        }
+    </script>
 </head>
 <body>
-    
     <header>
         <h1>Daftar Menu Restoran Sulthan</h1>
         <img src="logo.png" alt="Logo Restoran Sulthan" class="logo">
@@ -18,7 +112,6 @@
         </nav>
     </header>
 
-  
     <table>
         <thead title="Daftar Menu Makanan">
             <tr>
@@ -39,21 +132,26 @@
                 <td>Ayam Bakar</td>
                 <td>Rp 30,000</td>
                 <td><a href="https://www.liputan6.com/hot/read/5604469/5-resep-ayam-bakar-pedas-manis-yang-enak-dan-simpel" target="_blank">Link</a></td>
-            td><img src="Ayam Bakar.jpeg" alt="Ayam bakar"></td>
+                <td><img src="Ayam Bakar.jpeg" alt="Ayam Bakar"></td>
             </tr>
             <tr>
                 <td>Mie Goreng</td>
                 <td>Rp 20,000</td>
                 <td><a href="https://cookpad.com/id/cari/mie%20goreng" target="_blank">Link</a></td>
-                <td><img src="Mie Goreng.jpeg" alt="Mie Goreng"></td>td>
-            </tr>   
+                <td><img src="Mie Goreng.jpeg" alt="Mie Goreng"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form>
+        <input type="checkbox" name="makanan" value="Nasi Goreng"> Nasi Goreng<br>
+        <input type="checkbox" name="makanan" value="Ayam Bakar"> Ayam Bakar<br>
         <input type="checkbox" name="makanan" value="Mie Goreng"> Mie Goreng<br><br>
         <button type="button" onclick="submitPesanan()">Pesan Sekarang</button>
     </form>
 
- 
     <footer>
-        @Copyright Sulthan Tegar Naraja 2024
+        &copy; Sulthan Tegar Naraja 2024
     </footer>
 </body>
 </html>
