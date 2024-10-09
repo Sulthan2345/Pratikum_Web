@@ -13,6 +13,7 @@ h1 {
     display: block;
     margin: 0 auto 10px;
 }
+
 nav {
     margin-bottom: 20px;
 }
@@ -22,6 +23,10 @@ nav a {
     margin: 0 10px;
     font-weight: bold;
 }
+nav a:hover {
+    color: #c70039; /* Hover effect */
+}
+
 table {
     width: 80%;
     margin: 0 auto;
@@ -29,7 +34,6 @@ table {
     border: 2px solid #333;
     font-family: Arial, sans-serif;
 }
-
 thead {
     background-color: #ffcc80;
     font-family: Verdana, sans-serif;
@@ -49,10 +53,16 @@ img {
     width: 100px;
     height: auto;
 }
+
 footer {
     margin-top: 50px;
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
+}
+
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
