@@ -1,70 +1,90 @@
-header {
+body {
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+h1, p {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.logo {
-    width: 15px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-
-nav {
-    margin-bottom: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ff5733;
-    margin: 0 10px;
-    font-weight: bold;
+    color: #0e7392; /* Biru tua menggambarkan kesan maskulin dan profesional */
 }
 
 table {
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: auto;
     border-collapse: collapse;
-    border: 2px solid #333;
-    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Biru muda yang lebih segar, netral */
 }
 
-thead {
-    background-color: #ffcc80;
-    font-family: Verdana, sans-serif;
+th {
+    background-color: #006064; /* Biru kehijauan yang lebih gelap dan kuat */
+    color: white;
+    padding: 10px;
+    font-family: 'Tahoma';
+    border: 1px solid #004d40; /* Warna yang lebih elegan dan maskulin */
 }
 
-th, td {
+td {
+    border: 1px solid #004d40;
     padding: 10px;
     text-align: center;
-    border: 1px solid #333;
+    font-family: 'Gill Sans MT';
+    color: #004d40; /* Warna biru kehijauan yang lebih tenang */
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #f7f7f7;
+tr:hover {
+    background-color: #b2ebf2; /* Warna hover yang lebih lembut dan segar */
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f1f1f1;
+th:nth-child(even) {
+    color: #ff0000; /* Warna merah untuk memberi variasi dan energi */
 }
 
-img {
-    width: 100px;
-    height: auto;
+th:nth-child(odd) {
+    color: #0011ff; 
 }
 
+td:nth-child(even) {
+    color: #004d40; 
+}
+
+td:nth-child(odd) {
+    color: #ff5722; 
+}
+
+h2, h3 {
+    font-size: 20px; 
+    font-weight: bold; 
+    text-align: center;
+    color: #0e7392;
+}
+
+p img {
+    max-width: 200px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; /* Logo ditengah */
+}
+
+td img {
+    max-width: 200px; 
+    height: auto; 
+}
 
 footer {
-    margin-top: 50px;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
+    text-align: center; 
+    background-color: #004d40; 
+    padding: 10px 15px;
+    width: 65%;
+    margin: auto;
+}
+
+footer p {
     color: white;
+}
+
+.logo {
+    width: 120px; /* Sesuaikan ukuran logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; 
 }
