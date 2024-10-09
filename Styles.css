@@ -1,14 +1,22 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; 
+}
+
 header {
     text-align: center;
     margin-bottom: 20px;
 }
+
 h1 {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
 }
+
 .logo {
-    width: 20px;
+    width: 100px; /* Sesuaikan ukuran logo */
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -17,12 +25,14 @@ h1 {
 nav {
     margin-bottom: 20px;
 }
+
 nav a {
     text-decoration: none;
     color: #ff5733;
     margin: 0 10px;
     font-weight: bold;
 }
+
 nav a:hover {
     color: #c70039; 
 }
@@ -33,22 +43,33 @@ table {
     border-collapse: collapse;
     border: 2px solid #333;
     font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 thead {
     background-color: #ffcc80;
     font-family: Verdana, sans-serif;
 }
+
 th, td {
     padding: 10px;
     text-align: center;
     border: 1px solid #333;
 }
+
+th {
+    background-color: #ffab40; 
+    color: white; /* Warna teks untuk header tabel */
+}
+
 tbody tr:nth-child(odd) {
     background-color: #f7f7f7;
 }
+
 tbody tr:nth-child(even) {
     background-color: #f1f1f1;
 }
+
 img {
     width: 100px;
     height: auto;
@@ -60,9 +81,4 @@ footer {
     padding: 10px;
     background-color: #333;
     color: white;
-}
-
-body {
-    padding: 20px;
-    font-family: Arial, sans-serif;
 }
