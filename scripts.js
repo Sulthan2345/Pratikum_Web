@@ -1,14 +1,18 @@
-function submitPesanan() {
-    const form = document.getElementById('pesananForm');
-    const makananTerpilih = [];
+function submitorder(){
+    const checkboxes = document.querySelectorAll('input[type="checkboxes"]:checked');
+    const menuItems =[
+        {name: 'Nasi Goreng', Harga: 25000},
+        {name: 'Ayam Bakar',  Harga: 30000},
+        {name: 'Mie Goreng',  Harga: 20000},
+    ];
 
-    form.querySelectorAll('input[name="makanan"]:checked').forEach(checkbox => {
-        makananTerpilih.push(checkbox.value);
-    });
+    if (checkboxes.length > 0){
+        console.log("Pesanan Anda:");
+        checkboxes.forEach(checkbox, index) => {
+            console.log ('${menuItems[index].name ) - Rp. ${menuItems[index].price}');
 
-    if (makananTerpilih.length > 0) {
-        console.log("Pesanan Anda:", makananTerpilih.join(', '));
-    } else {
-        console.log("Tidak ada makanan yang dipilih.");
+        };
+    } else{
+       console.log("Tidak ada makanan yang dipilih.");
     }
 }
