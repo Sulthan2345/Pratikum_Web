@@ -8,7 +8,7 @@ h1 {
     text-align: center;
 }
 .logo {
-    width: 50px;
+    width: 20px;
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -24,7 +24,7 @@ nav a {
     font-weight: bold;
 }
 nav a:hover {
-    color: #c70039; /* Hover effect */
+    color: #c70039; 
 }
 
 table {
