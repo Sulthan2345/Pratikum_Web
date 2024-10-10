@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <title>Penjumlahan</title>
+</head>
+    <body>
+        <p>
     <script language="javascript">
         function jumlah() {
             var bil1 = parseFloat(document.penghitung.bilangan1.value);
@@ -16,15 +19,16 @@
             console.log("Hasil penjumlahan = " + hasil);
         }
     </script>
-</head>
-<body>
+            
     <h1>Masukkan data via form</h1>
     <form name="penghitung">
+        
         <pre>
 Bilangan pertama : <input type="text" size="11" name="bilangan1"/>
 Bilangan kedua : <input type="text" size="11" name="bilangan2"/>
+    <input type="button" value="jumlahkan" onclick="jumlah()"/>
         </pre>
-        <input type="button" value="Jumlahkan" onclick="jumlah()"/>
+        
     </form>
     <p id="hasil"></p>
 </body>
